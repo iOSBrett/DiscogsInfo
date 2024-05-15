@@ -41,8 +41,13 @@ extension Encodable {
     func json() throws -> String {
          String(data: try data(), encoding: .utf8) ?? ""
     }
-    func jsonPrettyPrinted() throws -> String {
-        String(data: try dataPrettyPrinted(), encoding: .utf8) ?? ""
+    func jsonPrettyPrinted() -> String {
+        do {
+            return String(data: try dataPrettyPrinted(), encoding: .utf8) ?? ""
+        }
+        catch {
+            return ""
+        }
     }
     func jsonDateFormatted(with dateFormatter: DateFormatter) throws -> String {
         return String(data: try dataDateFormatted(with: dateFormatter), encoding: .utf8) ?? ""

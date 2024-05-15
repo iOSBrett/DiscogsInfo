@@ -1,6 +1,15 @@
 {
-  "originHash" : "35784450830851518147f002ea9b6235e18186e99d7f7d1f449740f8aadf5128",
+  "originHash" : "f9977f311c67da879ba3770bf6185794abe34fd0633b12aa99294fb631027a7e",
   "pins" : [
+    {
+      "identity" : "morpheus",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/iOSBrett/Morpheus",
+      "state" : {
+        "revision" : "0343c0abb705151b307339e7b349e00395404de0",
+        "version" : "0.1.3"
+      }
+    },
     {
       "identity" : "swift-argument-parser",
       "kind" : "remoteSourceControl",

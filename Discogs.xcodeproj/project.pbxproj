@@ -14,6 +14,8 @@
 		8B70D8702BF09EA6001F70CA /* DiscogsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B70D86F2BF09EA6001F70CA /* DiscogsInfo.swift */; };
 		8BAD62482BF34D1600FEF7B3 /* Encoder+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAD62472BF34D1600FEF7B3 /* Encoder+Extensions.swift */; };
 		8BAD624A2BF350A600FEF7B3 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAD62492BF350A600FEF7B3 /* Date+Extensions.swift */; };
+		8BAD624C2BF44A9F00FEF7B3 /* DiscogTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAD624B2BF44A9F00FEF7B3 /* DiscogTypes.swift */; };
+		8BAD624F2BF4A27600FEF7B3 /* Morpheus in Frameworks */ = {isa = PBXBuildFile; productRef = 8BAD624E2BF4A27600FEF7B3 /* Morpheus */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +37,7 @@
 		8B70D86F2BF09EA6001F70CA /* DiscogsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsInfo.swift; sourceTree = "<group>"; };
 		8BAD62472BF34D1600FEF7B3 /* Encoder+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encoder+Extensions.swift"; sourceTree = "<group>"; };
 		8BAD62492BF350A600FEF7B3 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		8BAD624B2BF44A9F00FEF7B3 /* DiscogTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogTypes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +48,7 @@
 				8B5F35DD2BF0AB8B00888818 /* ArgumentParser in Frameworks */,
 				8B5F35D82BF0A56600888818 /* HTTPTypes in Frameworks */,
 				8B5F35DA2BF0A56600888818 /* HTTPTypesFoundation in Frameworks */,
+				8BAD624F2BF4A27600FEF7B3 /* Morpheus in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,8 +77,9 @@
 				8B5F35DE2BF0B13400888818 /* LINKS.md */,
 				8BAD62472BF34D1600FEF7B3 /* Encoder+Extensions.swift */,
 				8BAD62492BF350A600FEF7B3 /* Date+Extensions.swift */,
-				8B5F35D42BF0A2DD00888818 /* DiscogsService.swift */,
 				8B70D86F2BF09EA6001F70CA /* DiscogsInfo.swift */,
+				8BAD624B2BF44A9F00FEF7B3 /* DiscogTypes.swift */,
+				8B5F35D42BF0A2DD00888818 /* DiscogsService.swift */,
 			);
 			path = Discogs;
 			sourceTree = "<group>";
@@ -99,6 +104,7 @@
 				8B5F35D72BF0A56600888818 /* HTTPTypes */,
 				8B5F35D92BF0A56600888818 /* HTTPTypesFoundation */,
 				8B5F35DC2BF0AB8B00888818 /* ArgumentParser */,
+				8BAD624E2BF4A27600FEF7B3 /* Morpheus */,
 			);
 			productName = Discogs;
 			productReference = 8B70D86C2BF09EA6001F70CA /* Discogs */;
@@ -131,6 +137,7 @@
 			packageReferences = (
 				8B5F35D62BF0A56600888818 /* XCRemoteSwiftPackageReference "swift-http-types" */,
 				8B5F35DB2BF0AB8B00888818 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				8BAD624D2BF4A27600FEF7B3 /* XCRemoteSwiftPackageReference "Morpheus" */,
 			);
 			productRefGroup = 8B70D86D2BF09EA6001F70CA /* Products */;
 			projectDirPath = "";
@@ -149,6 +156,7 @@
 				8B5F35D52BF0A2DD00888818 /* DiscogsService.swift in Sources */,
 				8BAD624A2BF350A600FEF7B3 /* Date+Extensions.swift in Sources */,
 				8BAD62482BF34D1600FEF7B3 /* Encoder+Extensions.swift in Sources */,
+				8BAD624C2BF44A9F00FEF7B3 /* DiscogTypes.swift in Sources */,
 				8B70D8702BF09EA6001F70CA /* DiscogsInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +344,14 @@
 				minimumVersion = 1.3.1;
 			};
 		};
+		8BAD624D2BF4A27600FEF7B3 /* XCRemoteSwiftPackageReference "Morpheus" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/iOSBrett/Morpheus";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -353,6 +369,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8B5F35DB2BF0AB8B00888818 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
 			productName = ArgumentParser;
+		};
+		8BAD624E2BF4A27600FEF7B3 /* Morpheus */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BAD624D2BF4A27600FEF7B3 /* XCRemoteSwiftPackageReference "Morpheus" */;
+			productName = Morpheus;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
