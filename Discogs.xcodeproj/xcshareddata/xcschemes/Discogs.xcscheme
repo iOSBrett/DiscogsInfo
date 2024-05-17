@@ -54,10 +54,26 @@
       <CommandLineArguments>
          <CommandLineArgument
             argument = "--type master"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "Jalamanta"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "--folder-list"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "--sort artist"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "--folder-id 3236773"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "--username IOSBrett"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
